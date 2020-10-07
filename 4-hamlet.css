@@ -1,0 +1,71 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    display: block;
+}
+
+play {
+    margin: 0.5em;
+}
+
+play>author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    font-variant-caps: petite-caps;
+    letter-spacing: 3pt;
+}
+
+title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-variant-caps: petite-caps;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+play>title {
+    font-size: xx-large;
+    border-bottom: 3px solid black;
+    letter-spacing: 5pt;
+}
+
+scene>title {
+    border: 1px solid red;
+    font-size: large;
+    padding: 5px;
+}
+
+instruction {
+    color: gray;
+    font-style: italic;
+}
+
+source {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+line,
+dialogue>instruction {
+    text-indent: 10pt;
+}
+
+dialogue+instruction {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+[t="inline"] {
+    display: inline-block;
+}
+
+[t="inline"]+line {
+    display: inline-block;
+    text-indent: 0;
+}
+
+number {
+    display: none;
+}
