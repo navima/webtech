@@ -1,6 +1,7 @@
 * {
-    border: 1px dashed grey;
+    /*border: 1px dashed grey;*/
     display: block;
+    font-family: Demos;
 }
 
 album {
@@ -9,6 +10,7 @@ album {
     margin: 30px;
     box-shadow: 5px 5px 5px gray;
     padding: 5px;
+    border: 1px solid black;
     border-radius: 7px;
     text-align: center;
 }
@@ -25,7 +27,7 @@ track>title {
 }
 
 track {
-    display: block;
+    display: table-row;
     text-align: left;
 }
 
@@ -40,15 +42,16 @@ track:hover {
 
 tracks {
     counter-reset: myCounter;
+    display: table;
+    width: 100%;
 }
 
 track::before {
     content: counter(myCounter) ".";
     counter-increment: myCounter;
-    background-color: lightcoral;
-    display: inline-block;
     text-align: right;
-    /*width: 25pt;*/
+    display: table-cell;
+    padding: 0 5px 0 0;
 }
 
 year::before {
@@ -61,7 +64,11 @@ year::after {
 
 length {
     text-align: right;
-    float: right;
+    display: table-cell;
+}
+
+track>title {
+    display: table-cell;
 }
 
 artist::after {
