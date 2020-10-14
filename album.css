@@ -1,0 +1,76 @@
+* {
+    border: 1px dashed grey;
+    display: block;
+}
+
+album {
+    display: block;
+    width: fit-content;
+    margin: 30px;
+    box-shadow: 5px 5px 5px gray;
+    padding: 5px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+album>title,
+artist,
+year {
+    font-size: larger;
+    display: contents;
+}
+
+track>title {
+    display: inline-block;
+}
+
+track {
+    display: block;
+    text-align: left;
+}
+
+track:nth-child(odd) {
+    background-color: rgb(245, 245, 245);
+}
+
+track:hover {
+    background-color: rgb(255, 215, 0);
+    font-weight: bold;
+}
+
+tracks {
+    counter-reset: myCounter;
+}
+
+track::before {
+    content: counter(myCounter) ".";
+    counter-increment: myCounter;
+    background-color: lightcoral;
+    display: inline-block;
+    text-align: right;
+    /*width: 25pt;*/
+}
+
+year::before {
+    content: "(";
+}
+
+year::after {
+    content: ")";
+}
+
+length {
+    text-align: right;
+    float: right;
+}
+
+artist::after {
+    content: " - "
+}
+
+artist,
+title,
+year {
+    padding: 0;
+    margin: 0;
+}
