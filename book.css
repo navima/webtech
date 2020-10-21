@@ -1,0 +1,75 @@
+* {
+    display: block;
+    /*border: 1px dotted black;*/
+}
+
+book {
+    background-color: rgb(255, 248, 220);
+    border-top: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+author {
+    font-size: large;
+    font-variant: small-caps;
+}
+
+book>title {
+    font-size: x-large;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+chapter>title {
+    font-size: large;
+    padding: 5px;
+    text-decoration: solid black underline;
+}
+
+book {
+    counter-set: counter(chcounter);
+    counter-set: counter(fncounter);
+}
+
+chapter>title::before {
+    content: counter(chcounter, upper-roman)". ";
+}
+
+chapter {
+    counter-increment: chcounter;
+}
+
+para {
+    text-indent: 10pt;
+    text-align: left;
+    margin: 5px 0px;
+}
+
+para:first-of-type {
+    text-indent: 0;
+}
+
+para:first-of-type::first-letter {
+    font-size: x-large;
+}
+
+footnote {
+    font-size: 0;
+    text-indent: 0;
+    counter-increment: fncounter;
+    display: inline-flex;
+}
+
+footnote::before {
+    content: "["counter(fncounter)"] ";
+    font-size: x-small;
+    vertical-align: super;
+}
+
+footnote:hover {
+    font-size: larger;
+    background-color: orange;
+}
+
+rgb(106, 90, 205)
