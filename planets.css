@@ -1,0 +1,35 @@
+*{
+	display: block;
+	border: 1px solid pink;
+	padding: 3px;
+}
+
+name{
+	display: none;
+}
+
+name:lang(en),
+IAU,
+symbols{
+	display: table-cell;
+	border: 1px solid gray;
+	vertical-align: middle;
+}
+
+planets{
+	display: table;
+	margin: 1em;
+	border-collapse: collapse;
+}
+
+planet{
+	display: table-row;
+}
+
+symbols{
+	display: table-cell;
+}
+
+represents{
+	display: none;
+}

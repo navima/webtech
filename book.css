@@ -27,6 +27,11 @@ chapter>title {
     text-decoration: solid black underline;
 }
 
+para:hover{
+    color: white;
+    background-color: slateblue;
+}
+
 book {
     counter-set: counter(chcounter);
     counter-set: counter(fncounter);

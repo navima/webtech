@@ -1,0 +1,145 @@
+*{
+	display: block;
+	padding: 1px;
+}
+
+syllabus{
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid gray;
+	background-image: url("https://www.inf.unideb.hu/sites/default/files/varteresz_magdolna.jpg");
+	/*background-color: tomato;
+	background-size: contain;
+	background-repeat: no-repeat;*/
+}
+
+course>title{
+	border: 1px solid red;
+	border-top-right-radius: 100%;
+	background-color: red;
+	margin-top: 25px;
+	padding-top: 25px;
+	transform: rotate(2deg);
+}
+
+title{
+	margin-top: 15px;
+	background-color: blue;
+	color: white;
+	font-size: x-large;
+}
+
+item,
+content{
+	border: 2px solid green;
+	border-top-right-radius: 100%;
+	background-color: green;
+}
+
+italic,
+bold{
+	display: contents;
+}
+
+bold{
+	font-weight: bold;
+}
+
+italic{
+	font-style: italic;
+}
+
+basic-data{
+	display: table;
+	border: 20px solid grey;
+	border-style: ridge;
+	background-image: url("https://www.inf.unideb.hu/sites/default/files/varteresz_magdolna.jpg");
+	background-size: contain;
+}
+
+pair{
+	display: table-row;
+}
+
+key,
+value{
+	display: table-cell;
+}
+
+
+@keyframes cucc{
+	0%{
+		border-radius: 0%;
+	}
+	50%{
+		border-radius: 100%;
+	}
+	100%{
+		transform: rotate(360deg);
+		border-radius: 100%;
+	}
+}
+
+basic-data:hover{
+	animation-name: cucc;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-duration: 1s;
+}
+
+@keyframes EXPAND{
+	0%{
+		height: 25px;
+		color: black;
+		background-color: green;
+		font-size: medium;
+	}
+	2%{
+		color: red;
+	}
+	4%{
+		color: yellow;
+	}
+	6%{
+		color: green;
+	}
+	8%{
+		color: blue;
+	}
+	10%{
+		color: purple;
+		background-color: orangered;
+	}
+	100%{
+		height: 800px;
+		font-size: 300pt;
+	}
+}
+
+item:hover, content:hover{
+	animation-name: EXPAND;
+	animation-duration: 60s;
+	animation-timing-function: linear;
+}
+
+competence{
+	display: list-item;
+	list-style-type: none;
+}
+
+competence::before{
+	content: "Ű ";
+}
+
+competence>item{display: inline-flex;}
+
+schedule{
+	counter-set: schc;
+}
+
+schedule>item::before{
+	content: counter(schc, katakana)" ";
+	counter-increment: schc;
+}
+

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<!DOCTYPE planets SYSTEM "planets.dtd">
+<?xml-stylesheet type="text/css" href="planets.css" ?>
+
+<!--
+Name	IAU		Unicode display		Represents
+
+Mercury	H, Me	☿	Mercury's caduceus
+Venus	V		♀	Venus's necklace (also interpreted as a "hand mirror")
+Earth	E, T	♁	a globus cruciger
+				🜨	globe with equator and a meridian
+					(alternative characters with similar shape: U+2295 ⊕ CIRCLED PLUS; U+2A01 ⨁ N-ARY CIRCLED PLUS OPERATOR; U+1F310 🌐︎ GLOBE WITH MERIDIANS)
+Mars	M, Ma	♂	Mars's shield and spear
+Jupiter	J		♃	the letter Zeta (for Zeus, the Greek equivalent to the Roman god Jupiter)
+Saturn	S		♄	Saturn's sickle or scythe
+Uranus	U		⛢	the element platinum
+				♅	a globe surmounted by the letter H (for Herschel, who discovered Uranus)
+					(more common in older or British literature)
+Neptune	N		♆	Neptune's trident
+				⯉	a globe surmounted by the letters "L" and "V", (for Le Verrier, who discovered Neptune)
+					(more common in older, especially French, literature)
+-->
+
+<planets>
+	<planet>
+		<name xml:lang="en">
+			Mercury
+		</name>
+		<name xml:lang="hu">
+			Merkúr
+		</name>
+		<IAU>
+			H, Me
+		</IAU>
+		<symbols>
+			<symbol>
+				<unicode>
+					☿
+				</unicode>
+				<represents>
+					Mercury's caduceus
+				</represents>
+			</symbol>
+		</symbols>
+	</planet>
+	<planet>
+		<name xml:lang="en">
+			Earth
+		</name>
+		<IAU>
+			E, T
+		</IAU>
+		<symbols>
+			<symbol>
+				<unicode>
+					♁
+				</unicode>
+				<represents>
+					a globus cruciger
+				</represents>
+			</symbol>
+			<symbol>
+				<unicode>
+					🜨
+				</unicode>
+				<represents>
+					globe with equator and a meridian[12][37]
+(alternative characters with similar shape: U+2295 ⊕ CIRCLED PLUS; U+2A01 ⨁ N-ARY CIRCLED PLUS OPERATOR; U+1F310 🌐︎ GLOBE WITH MERIDIANS)
+				</represents>
+			</symbol>
+		</symbols>
+	</planet>
+</planets>

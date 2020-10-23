@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="syllabus.css" type="text/css" ?>
+<!DOCTYPE syllabus SYSTEM "syllabus.dtd">
+
+<syllabus>
+	<title>Repüléstan</title>
+	<basic-data>
+		<pair>
+			<key>Kredit</key>
+			<value>6</value>
+		</pair>
+		<pair>
+			<key>Féléves óraszám</key>
+			<value>8+0+16</value>
+		</pair>
+		<pair>
+			<key>Tárgy típusa</key>
+			<value>Kötelező</value>
+		</pair>
+		<pair>
+			<key>Előfeltételek</key>
+			<value>-</value>
+		</pair>
+	</basic-data>
+	<description>
+		<title>Leírás</title>
+		<content>A hallgató a kurzus elvégése során megismerkedik a seprű történelmével, annak részeivel, működési elveivel, a különböző seprűtípusok közti különbségekkel, valamint a közlekedés alapvető szabályaival.</content>
+		<content>A gyakorlati órák keretében pedig a biztonságos közlekedés, valamint az elmélet gyakorlatba való átültetésével, rutin kialakításával.</content>
+	</description>
+	<competences>
+		<competence>
+			<item>
+				Ismeri a seprű
+				<bold>működtetési </bold>
+				és
+				<bold>irányítási </bold>
+				folyamatainak alapvető működési elveit, módszereit és eljárásait, és az alapvető közlekedési szabályokat.
+			</item>
+		</competence>
+		<competence>
+			<item>
+				Képes a seprű-közlekedési tudásanyagát alkalmazni a való élet-beni szabályos és biztonságos közlekedésre.
+			</item>
+		</competence>
+		<competence>
+			<item>
+				Felelősséget vállal közlekedési tevékenységéért. Törekszik a hatékony és balesetmentes seprű-közlekedésre.
+			</item>
+		</competence>
+	</competences>
+	<course>
+		<title>Repüléstan</title>
+		<instructors>
+			<title>Előadás</title>
+			<item>Rolanda Hooch</item>
+		</instructors>
+		<schedule>
+			<title>Heti beosztás</title>
+			<item>A seprű történelme</item>
+			<item>A seprű alapvető részei</item>
+			<item>Seprű-mágia</item>
+			<item>Modellek közti különbségek</item>
+			<item>Seprű-játékok</item>
+			<item>Szabályos közlekedés szabályai</item>
+			<item>...</item>
+		</schedule>
+		<requirements>
+			<title>Követelmények</title>
+			<content>
+				A félév közben a kurzus gyakorlatain órai vagy házi manőverek megoldásával
+				<italic>semennyi </italic>
+				extra pontot nem szerezhet.
+			</content>
+		</requirements>
+		<exams>
+			<title>
+				Vizsga/számonkérés
+			</title>
+			<content>
+				A tárgyból vizsgát kell tenni.
+			</content>
+			<item>meg</item>
+			<item>fogsz</item>
+			<item>bukni</item>
+		</exams>
+		<consultation>
+			<title>Konzultációk</title>
+			<content>Nincsenek. Itt csak konzolációk lesznek.</content>
+		</consultation>
+	</course>
+	<recommended-readings>
+		<title>Recommended Literature</title>
+		<item>Amúgyis, mi az hogy "recommended reading"? Ajánlott hogy felolvasson nekünk valaki? Nehéz lesz a Tannenbaum-estek mellé beszúrni.</item>
+	</recommended-readings>
+	<ethical-requirements>
+		<title>Etikai követelmények</title>
+		<content>A hallgatókkal kapcsolatos etikai normákra A DEBRECENI EGYETEM ETIKAI KÓDEXE az irányadó. Az etikai normákat megsértők automatikusan elégtelent kapnak a vizsga során.</content>
+		<content>Pl. plágium</content>
+	</ethical-requirements>
+</syllabus>

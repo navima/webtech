@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- a gyökérelem -->
+<!ELEMENT syllabus (title, basic-data, description, competences, course+, recommended-readings, ethical-requirements)>
+
+<!-- a tárgy alapvető adatai -->
+<!ELEMENT basic-data (pair+) >
+
+<!-- olyan bejegyzés, aminek van címe és értéke (pl. típus, előkövetelmény) -->
+<!ELEMENT pair (key, value) >
+
+<!--  a tárgy leírása -->
+<!ELEMENT description (title, content+) >
+
+<!-- kompetenciák -->
+<!ELEMENT competences (competence+) >
+<!--  egy kompetencia -->
+<!ELEMENT competence (item+) >
+<!--  egy kurzus, pl. előadás és labor  -->
+<!ELEMENT course (title, instructors, schedule, requirements, exams, consultation) >
+
+<!-- oktatók -->
+<!ELEMENT instructors (title, item+) >
+<!-- heti beosztás -->
+<!ELEMENT schedule (title, item+) >
+<!--  követelmények -->
+<!ELEMENT requirements (title, content+) >
+<!--  számonkérések -->
+<!ELEMENT exams (title, (content|item)+) >
+<!--  konzultáció -->
+<!ELEMENT consultation (title, (content|item)+) >
+<!--  ajánlott olvasmány -->
+<!ELEMENT recommended-readings (title, item+) >
+<!-- etikai követelmények -->
+<!ELEMENT ethical-requirements (title, (content|item)+) >
+
+<!-- egy tulajdonság neve -->
+<!ELEMENT key (#PCDATA) >
+<!-- egy tulajdonság értéke -->
+<!ELEMENT value (#PCDATA) >
+<!-- bárminek a címe -->
+<!ELEMENT title (#PCDATA) >
+<!-- bárminek a szöveges, bekezdés-szerű tartalma -->
+<!ELEMENT content (#PCDATA|bold|italic)* >
+<!-- egy lista eleme -->
+<!ELEMENT item (#PCDATA|bold|italic)* >
+
+<!-- formázáshoz használható -->
+<!ELEMENT bold (#PCDATA) >
+<!ELEMENT italic (#PCDATA) >
