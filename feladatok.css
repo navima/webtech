@@ -1,0 +1,45 @@
+*, div, p::first-letter, a img, h1+p, div[class=nav], div.nav, #main *:lang(en) {
+    color: transparent;
+}
+
+:lang(hu) {
+    color: red
+}
+
+div>p {
+    color: blue
+}
+
+#main>p.foo {
+    color: yellow
+}
+
+#main :lang(hu) {
+    color: green
+}
+
+div:lang(hu) p.foo:first-child {
+    color: black
+}
+
+/* */
+
+.movies>ul>li:not(:first-child) {
+    color: navy
+}
+
+h1+ul li:first-child {
+    color: gold
+}
+
+#ot li+ :last-child {
+    color: tomato
+}
+
+ul> :nth-child(2n + 1) {
+    color: purple
+}
+
+*:not([class])+ul:first-child>li:first-child {
+    color: silver
+}

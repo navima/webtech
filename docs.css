@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+}
+
+h1{
+    border-bottom: thick double blue;
+    position: sticky;
+    top: 0;
+}
+
+p{
+    padding-top: 1em;
+    border: thin solid red;
+    border-radius: 1em;
+}
+
+li::before{
+    content: '> ';
+}
+
+p::first-line{
+    background-color: violet;
+}
+
+pre{
+    margin: 1em;
+    background-color: rgb(36, 36, 36);
+    color: lightsteelblue;
+}
+
+pre::before{
+    content: counter(s)"> ";
+    counter-increment: s;
+}
+
+div{
+    padding-top: 2em;
+    counter-reset: s;
+}
+pre+p{
+    transform: scaleX(-1);
+    padding: 2em;
+    transform: static;
+}

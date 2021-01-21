@@ -1,0 +1,46 @@
+<!ELEMENT park (guests,places)>
+<!ATTLIST park name CDATA #REQUIRED>
+<!ELEMENT guests (adults,children,families)>
+<!ELEMENT adults (men,women)>
+<!ELEMENT men (guest*)>
+<!ELEMENT guest (name,height,disabilities?,reviews,(inQueue|onRide|headingFor))>
+<!ATTLIST guest id ID #REQUIRED>
+<!ATTLIST guest family IDREF #IMPLIED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT height (#PCDATA)>
+<!ELEMENT reviews (review*)>
+<!ELEMENT review EMPTY>
+<!ATTLIST review points (1|2|3|4|5) #REQUIRED>
+<!ATTLIST review ride IDREF #REQUIRED>
+<!ELEMENT inQueue EMPTY>
+<!ATTLIST inQueue ride NMTOKEN #REQUIRED>
+<!ELEMENT onRide EMPTY>
+<!ATTLIST onRide ride NMTOKEN #REQUIRED>
+<!ELEMENT headingFor EMPTY>
+<!ATTLIST headingFor ride NMTOKEN #REQUIRED>
+<!ELEMENT disabilities (#PCDATA)>
+<!ELEMENT women (guest*)>
+<!ELEMENT children ((boys,girls)|(child+))>
+<!ELEMENT boys (guest*)>
+<!ELEMENT girls (guest*)>
+<!ELEMENT families (family*)>
+<!ELEMENT family (father,mother,children)>
+<!ATTLIST family id ID #REQUIRED>
+<!ELEMENT father (#PCDATA)>
+<!ELEMENT mother (#PCDATA)>
+<!ELEMENT child EMPTY>
+<!ATTLIST child idRef IDREF #REQUIRED>
+<!ELEMENT places (area+)>
+<!ELEMENT area (name,rides)>
+<!ATTLIST area id ID #REQUIRED>
+<!ELEMENT rides (type+)>
+<!ELEMENT type (ride+)>
+<!ATTLIST type name CDATA #REQUIRED>
+<!ELEMENT ride (name,minHeight?,maxHeight?,withAdult?,disabilities?,photoRide?,videoRide?,express?)>
+<!ATTLIST ride id ID #REQUIRED>
+<!ELEMENT minHeight (#PCDATA)>
+<!ELEMENT maxHeight (#PCDATA)>
+<!ELEMENT withAdult (#PCDATA)>
+<!ELEMENT photoRide EMPTY>
+<!ELEMENT videoRide EMPTY>
+<!ELEMENT express EMPTY>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Dokumentáció</title>
+    <link rel="stylesheet" href="docs.css">
+</head>
+
+<body>
+    <h1>
+        ToLower(CultureInfo) &#x1F981;
+    </h1>
+    <p>
+        Returns a copy of this string converted to lowercase, using the casing rules of the specified culture.
+        public string ToLower (System.Globalization.CultureInfo culture);
+    </p>
+    <h2>
+        Specification
+    </h2>
+    <h3>
+        Parameters
+    </h3>
+    <ul>
+        <li>Culture - An object that supplies culture-specific casing rules.</li>
+    </ul>
+    <h3>
+        Returns
+    </h3>
+    <ul>
+        <li>
+            <a href="https://docs.microsoft.com/en-us/dotnet/api/system.string?view=net-5.0">String</a> - The lowercase equivalent of the current string.
+        </li>
+    </ul>
+    <h3>
+        Exceptions
+    </h3>
+    <ul>
+        <li>ArgumentNullException - culture is null.</li>
+    </ul>
+    <h3>
+        Examples
+    </h3>
+    <div>
+        <p>
+            The following example converts two strings of uppercase characters to lowercase characters using the
+            English-United States and Turkish-Turkey cultures, then compares the lowercase strings. The uppercase
+            strings
+            are identical except that for each occurrence of the Unicode CAPITAL LETTER I in one string, the other
+            string
+            contains CAPITAL LETTER I WITH DOT ABOVE.
+        </p>
+        <pre>Console.WriteLine("alma").ToLower())</pre>
+        <p>ez kisbetűs</p>
+        <pre>Console.WriteLine("ALMA").ToLower())</pre>
+        <p>ez is</p>
+        <pre>Console.WriteLine("Alma").ToLower())</pre>
+        <p>nem túl meglepő módon még ez is</p>
+    </div>
+</body>
